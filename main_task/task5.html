@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*TASK 5: Using Python or PHP or Java or Ruby or JavaScript
+Implement a program that takes 3 users  inputs from the terminal or the Browser, and stores them in three variables. Result the largest of the three. Do this without using the the inbuilt max () function!
+The goal of this exercise is to think about rnals that programs normally take care of for us.*/
+
+      function find_largest(a, b, c) {
+        if (a >= b && a >= c) {
+          result =a;
+        } else if (b >= a && b >= c) {
+          result =b;
+        } else {
+          result =c;
+        }
+        return result
+      }
+
+      let a = Number (prompt("Enter the first number: "));
+     
+      let b = Number (prompt("Enter the second number: "));
+    
+      let c = Number (prompt("Enter the third number: "));
+     
+      let solution= find_largest(a,b,c)
+      console.log(solution)
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function trhat calculates the area of a tringle
+
+      function triangle_area(base, height) {
+        area = 0.5 * base * height;
+        return area;
+      }
+      let triangle1 = triangle_area(20, 30);
+      console.log(triangle1);
+      let triangle2 = triangle_area(80, 5);
+      console.log(triangle2);
+
+      //function trhat calculates the area of a rectangle
+
+      function rectangle_area(length, width) {
+        area = length * width;
+        return area;
+      }
+      rectangle_area();
+      let rectangle1 = triangle_area(28, 5);
+      console.log(rectangle1);
+
+      let rectangle2 = triangle_area(20, 4);
+      console.log(rectangle2);
+
+      let rectangle3 = triangle_area(50, 3);
+      console.log(rectangle3);
+
+      let rectangle4 = triangle_area(11, 5);
+      console.log(rectangle4);
+
+      // create a function that checks if a number is even number or odd number (use parameters and arguments)
+
+      function check_for_even_or_odd(number) {
+        let result=""
+        if (number % 2 === 0) {
+          result ="even"
+        } else {
+            result ="odd"
+        }
+        return result
+      }
+      let number=check_for_even_or_odd(10)
+      console.log(number)
+
+
+    </script>
+  </body>
+</html>

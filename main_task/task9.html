@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* TASK 9: Using Python or PHP or Java or Ruby or JavaScript
+        Write a program called stars. It should prompt the user for a number, and it should print the number of stars till the number entered.
+        Example If rows is 5, it should print the following:
+        *
+        **
+        ***
+        ****
+        *****..... */
+      //let rows = Number(prompt("Enter the number of atars you want pronted out"))
+      /*
+    function starsDisplay(){
+        let  = Number(prompt("Enter a number: "));
+
+        if (rows < 1) {
+          alert("Invalid input. Please enter a positive integer.");
+        } else {
+          for (let i = 1; i <= rows; i++) {
+            let stars = "";
+            for (let j = 1; j <= i; j++) {
+              stars += "*";
+            }
+          }
+          console.log("stars") 
+        }
+
+    }
+    console.log(starsDisplay(rows))
+*/
+
+      function stars(rows) {
+        let stars = "*";
+        for (i = 0; i <= rows; i++) {
+          console.log(stars.repeat(i));
+        }
+      }
+      let user_input = Number(prompt("enter number"));
+      stars(user_input);
+    </script>
+  </body>
+</html>

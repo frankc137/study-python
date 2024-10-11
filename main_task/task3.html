@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*TASK 3: Using Python or PHP or Java or Ruby or JavaScript
+        Write a program which gets a phone number from a form input or terminal. Validates the phone number by checking 
+        if it starts with +254.. or 07.. or 7… or 254.. or 01... or  1.. Convert the number to start with +254… 
+        e.g if a user enters “0712345678”, the program should display “+254712345678”
+        e.g if a user enters “0112345678”, the program should display “+254112345678”
+        e.g if a user enters “712345678”, the program should display “+254712345678”
+        Once you learn functions,revisit this and write this code inside a function.*/
+
+        function validate_And_Convert_PhoneNumber(phoneNumber){
+            if (phoneNumber.startsWith('254')&& phoneNumber.length ==13) {
+                result ='+254' + phoneNumber.slice(3);
+            } else if (phoneNumber.startsWith('07')&& phoneNumber.length ==10) {
+                result ='+2547' + phoneNumber.slice(2);
+            } else if (phoneNumber.startsWith('7')&& phoneNumber.length ==9) {
+                result ='+254' + phoneNumber;
+            } else if (phoneNumber.startsWith('01')&& phoneNumber.length ==10) {
+                result ='+2541' + phoneNumber.slice(2);
+            } else if (phoneNumber.startsWith('1')&& phoneNumber.length ==9) {
+                result ='+254' + phoneNumber;
+            } else {
+                result ='Invalid phone number';
+            }
+                return result
+
+        }
+            let phoneNumber = prompt('Enter your phone number: ');
+            validate_And_Convert_PhoneNumber(phoneNumber)
+            console.log(result)
+            
+
+
+
+    </script>
+</body>
+</html>

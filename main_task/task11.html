@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       /* TASK 11: Using Python or PHP or Java or Ruby or JavaScript
+        Write a program that takes the date of birth of a person and the program outputs 
+        the age in terms of years,months,days TODAY.*/
+        
+        function calculateAge(birthDate) {
+            let today = new Date();
+            let birthDateObject = new Date(birthDate);
+            let ageInMilliseconds = today.getTime() - birthDateObject.getTime();
+            let ageInDays = ageInMilliseconds / (1000 * 60 * 60 * 24);
+            let ageInYears = Math.floor(ageInDays / 365.25);
+            let remainingDays = ageInDays % 365.25;
+            let ageInMonths = Math.floor(remainingDays / 30.44);
+            let remainingDaysAfterMonths = remainingDays % 30.44;
+            return `${ageInYears} years, ${ageInMonths} months, ${Math.floor(remainingDaysAfterMonths)} days`;
+          }
+          console.log
+
+    </script>
+</body>
+</html>

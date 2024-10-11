@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  TASK 6:Using Python or PHP or Java or Ruby or JavaScript
+        Write a program that lets the user input a password. Give them only 4 attempts to 
+        check the passwords entered against “admin@123”.
+         If the password is correct access is granted. After you show them a message , the account is blocked.*/
+
+      function checkPassword() {
+        let correct_password = "admin@123";
+        let attempts = 0
+
+        for (i = 0; i < 4; i++) {
+          let user_input = prompt("enter password: ");
+          if (user_input === correct_password) {
+            alert("access granted");
+            break;
+          } else {
+            alert("incorrect password");
+          }
+        }
+        function blockAccount() {
+          alert("Account blocked.");
+        }
+      }
+      checkPassword();
+    </script>
+  </body>
+</html>
